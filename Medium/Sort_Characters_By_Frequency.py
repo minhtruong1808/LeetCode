@@ -17,8 +17,7 @@ def frequencySort(string):
     out_str = []
     for i in range(len(freq)-1, 0, -1):
         if len(freq[i])!= 0:
-            freq[i].sort()
-            for e in freq[i]:
+            for e in sorted(freq[i]):
                 out_str += e*i
     
     return out_str
